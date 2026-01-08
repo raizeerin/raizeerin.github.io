@@ -2750,3 +2750,19 @@ button a:focus,
   outline: 2px solid #fad3e4;
   outline-offset: 2px;
 }
+
+/* Remove underline for nav links */
+#navmenu a {
+  text-decoration: none; /* remove underline */
+  color: #fad3e4; /* main link color for aesthetic */
+  font-weight: 500; /* optional for visibility */
+  transition: color 0.2s ease, outline 0.2s ease;
+}
+
+/* Keep focus and hover styles for accessibility */
+#navmenu a:hover,
+#navmenu a:focus {
+  color: #fad3e4; /* darker shade on hover/focus */
+  outline: 2px solid #fad3e4; /* keyboard focus indicator */
+  outline-offset: 2px;
+}
