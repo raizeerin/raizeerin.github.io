@@ -12,24 +12,25 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Ubuntu",  sans-serif;
-  --nav-font: "Nunito",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Ubuntu", sans-serif;
+  --nav-font: "Nunito", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #1f1f1f; /* Background color for the entire website, including individual sections */
   --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color:  #fad3e4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #fad3e4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #232323; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #310606; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(236, 236, 236, 0.59);  /* The default color of the main navmenu links */
+  --nav-color: rgba(236, 236, 236, 0.59); /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #393939; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #393939; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -189,9 +190,8 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
-  .header~main,
-  .header~#footer {
+  .header ~ main,
+  .header ~ #footer {
     margin-left: 330px;
   }
 }
@@ -340,7 +340,7 @@ h6 {
   background-color: rgba(33, 37, 41, 0.1);
 }
 
-.navmenu .dropdown>.dropdown-active {
+.navmenu .dropdown > .dropdown-active {
   display: block;
   background-color: rgba(33, 37, 41, 0.03);
 }
@@ -478,11 +478,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -560,7 +560,11 @@ section,
 .hero .background-elements .bg-circle {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(45deg, color-mix(in srgb, var(--accent-color), transparent 90%), color-mix(in srgb, var(--accent-color), transparent 95%));
+  background: linear-gradient(
+    45deg,
+    color-mix(in srgb, var(--accent-color), transparent 90%),
+    color-mix(in srgb, var(--accent-color), transparent 95%)
+  );
   animation: float 6s ease-in-out infinite;
 }
 
@@ -742,7 +746,6 @@ section,
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0px);
@@ -754,7 +757,6 @@ section,
 }
 
 @keyframes floatIcon {
-
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
@@ -840,7 +842,11 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about .profile-card {
-  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--surface-color) 0%,
+    color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%
+  );
   border-radius: 2rem;
   padding: 2.5rem;
   text-align: center;
@@ -857,7 +863,11 @@ section,
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
+  background: linear-gradient(
+    90deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), var(--heading-color) 30%)
+  );
 }
 
 @media (max-width: 991px) {
@@ -966,7 +976,11 @@ section,
 
 .about .about-content .section-header .badge-text {
   display: inline-block;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 20%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), var(--heading-color) 20%)
+  );
   color: var(--contrast-color);
   padding: 0.5rem 1.5rem;
   border-radius: 2rem;
@@ -1145,7 +1159,9 @@ section,
   padding: 40px 20px;
   text-align: center;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
@@ -2258,7 +2274,10 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
   background-color: var(--accent-color);
 }
@@ -2535,7 +2554,6 @@ section,
 }
 
 @media (max-width: 991px) {
-
   .service-details .service-info,
   .service-details .related-services {
     margin-top: 30px;
@@ -2547,4 +2565,149 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/* Skip Navigation Links */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 16px;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+/* First focused link */
+.skip-link:focus {
+  top: 16px;
+}
+
+/* Second skip link appears below the first */
+.skip-link:focus + .skip-link {
+  top: 56px;
+}
+
+/* Remove default button styling */
+.filter-btn {
+  all: unset; /* removes white bg, borders, font */
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Ensure button is still keyboard-focusable */
+.filter-btn:focus {
+  outline: none;
+}
+
+/* Focus style applied to the LI when button receives focus */
+.filter-item:focus-within {
+  outline: 2px solid #fad3e4; /* Bootstrap primary */
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Active filter */
+.filter-btn.filter-active {
+  font-weight: 700;
+}
+
+/* Hover support (optional but recommended) */
+.filter-item:hover {
+  background-color: rgba(13, 110, 253, 0.08);
+  border-radius: 4px;
+}
+
+/* Ensure portfolio links are keyboard focusable */
+.portfolio-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Remove default outline so we control it */
+.portfolio-links a:focus {
+  outline: none;
+}
+
+/* Show focus on the whole card when link is focused */
+.portfolio-item:focus-within .portfolio-wrap {
+  outline: 3px solid #fad3e4; /* Bootstrap primary */
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+/* Optional: reveal overlay on keyboard focus (important!) */
+.portfolio-item:focus-within .portfolio-info {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Optional: subtle focus background */
+.portfolio-item:focus-within {
+  background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Ensure links have visible focus */
+.portfolio-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px; /* WCAG touch target */
+  height: 44px;
+  border-radius: 50%;
+}
+
+/* Visible keyboard focus */
+.portfolio-links a:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+  background-color: #fad3e4;
+}
+
+/* Fallback for browsers without :focus-visible */
+.portfolio-links a:focus {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.portfolio-info {
+  pointer-events: none;
+}
+
+.portfolio-links a {
+  pointer-events: auto;
+}
+
+/* FORCE visible focus for hero action buttons */
+.hero-actions a.btn:focus,
+.hero-actions a.btn:focus-visible {
+  outline: 3px solid #ffffff !important;
+  outline-offset: 4px !important;
+  box-shadow: 0 0 0 4px #fad3e4 !important;
+}
+
+/* Ensure outline is not suppressed */
+.hero-actions a.btn {
+  position: relative;
+}
+
+/* Ensure buttons show visible focus */
+.btn-focus-visible:focus,
+.btn-focus-visible:focus-visible {
+  outline: 3px solid #ffffff !important;   /* visible white border */
+  outline-offset: 4px !important;         /* separate from button edge */
+  box-shadow: 0 0 0 4px #fad3e4 !important; /* subtle glow */
+  z-index: 1000;                          /* ensure visibility above elements */
+}
+
+/* Optional: Hover styles */
+.btn-focus-visible:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
 }

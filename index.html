@@ -30,6 +30,9 @@
   </head>
 
   <body class="index-page">
+    <a href="#main-content" class="skip-link" aria-label="Skip directly to main section"> Skip to main content </a>
+    <a href="#portfolio" class="skip-link" aria-label="Skip directly to portfolio section"> Skip to portfolio </a>
+
     <header id="header" class="header dark-background d-flex flex-column justify-content-center">
       <i class="header-toggle d-xl-none bi bi-list"></i>
 
@@ -112,7 +115,7 @@
       </div>
     </header>
 
-    <main class="main">
+    <main id="main-content" class="main" role="main">
       <!-- Hero Section -->
       <section id="hero" class="hero section">
         <div class="background-elements">
@@ -296,7 +299,7 @@
                     <i class="bi bi-download"></i>
                     Download Resume
                   </a>
-                  <a href="https://calendly.com/raizeerin/30min" target="_blank" class="btn btn-outline">
+                  <a href="https://calendly.com/raizeerin/30min" target="_blank" class="btn btn-outline btn-focus-visible">
                     <i class="bi bi-chat-dots"></i>
                     Let's Talk
                   </a>
@@ -513,9 +516,7 @@
                   <li><i class="bi bi-geo-alt"></i> Quezon City</li>
                   <li>
                     <i class="bi bi-envelope"></i>
-                    <a href="mailto:raize.osiana@ciit.edu.ph">
-                      raize.osiana@ciit.edu.ph
-                    </a>
+                    <a href="mailto:raize.osiana@ciit.edu.ph"> raize.osiana@ciit.edu.ph </a>
                   </li>
                   <!--<li><i class="bi bi-phone"></i> +63 (555) 123-4567</li>-->
                   <li>
@@ -683,15 +684,46 @@
             <div class="row">
               <div class="col-lg-3 filter-sidebar">
                 <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
-                  <ul class="portfolio-filters isotope-filters">
-                    <li data-filter="*" class="filter-active">All Projects</li>
-                    <li data-filter=".filter-photography">Photography</li>
-                    <li data-filter=".filter-design">Design</li>
-                    <li data-filter=".filter-tradart">Traditional Art</li>
-                    <li data-filter=".filter-digiart">Digital Art</li>
-                    <li data-filter=".filter-film">Filmmaking</li>
-                    <li data-filter=".filter-webgame">Web and Game</li>
-                    <li data-filter=".filter-data">Data Analytics</li>
+                  <ul class="portfolio-filters isotope-filters" role="tablist">
+                    <li class="filter-item">
+                      <button type="button" data-filter="*" class="filter-btn filter-active">All Projects</button>
+                    </li>
+                    <li class="filter-item">
+                      <button type="button" data-filter=".filter-photography" class="filter-btn filter-active">
+                        Photography
+                      </button>
+                    </li>
+                    <li class="filter-item">
+                      <button type="button" data-filter=".filter-design" class="filter-btn filter-active">
+                        Design
+                      </button>
+                    </li>
+
+                    <li class="filter-item">
+                      <button type="button" data-filter=".filter-tradart" class="filter-btn filter-active">
+                        Traditional Art
+                      </button>
+                    </li>
+                    <li class="filter-item">
+                      <button type="button" data-filter=".filter-digiart" class="filter-btn filter-active">
+                        Digital Art
+                      </button>
+                    </li>
+                    <li class="filter-item">
+                      <button type="button" data-filter=".filter-film" class="filter-btn filter-active">
+                        Filmmaking
+                      </button>
+                    </li>
+                    <li class="filter-item">
+                      <button type="button" data-filter=".filter-webgame" class="filter-btn filter-active">
+                        Web and Game
+                      </button>
+                    </li>
+                    <li class="filter-item">
+                      <button type="button" data-filter=".filter-data" class="filter-btn filter-active">
+                        Data Analytics
+                      </button>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -715,7 +747,8 @@
                               href="assets/img/portfolio/photography/female01.jpg"
                               class="glightbox"
                               title="Untitled: Her"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -738,8 +771,12 @@
                           <span class="category">Photography</span>
                           <h4>Fearless</h4>
                           <div class="portfolio-links">
-                            <a href="assets/img/portfolio/photography/female02.jpg" class="glightbox" title="Fearless"
-                              ><i class="bi bi-plus-lg"></i
+                            <a
+                              href="assets/img/portfolio/photography/female02.jpg"
+                              class="glightbox"
+                              title="Fearless"
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -763,8 +800,12 @@
                           <span class="category">Photography</span>
                           <h4>UP Oblation</h4>
                           <div class="portfolio-links">
-                            <a href="assets/img/portfolio/photography/upoble.jpg" class="glightbox" title="UP Oblation"
-                              ><i class="bi bi-plus-lg"></i
+                            <a
+                              href="assets/img/portfolio/photography/upoble.jpg"
+                              class="glightbox"
+                              title="UP Oblation"
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -789,8 +830,12 @@
                           <span class="category">Photography</span>
                           <h4>Shadow Paws</h4>
                           <div class="portfolio-links">
-                            <a href="assets/img/portfolio/photography/cat2.jpg" class="glightbox" title="Black Cat"
-                              ><i class="bi bi-plus-lg"></i
+                            <a
+                              href="assets/img/portfolio/photography/cat2.jpg"
+                              class="glightbox"
+                              title="Black Cat"
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -815,8 +860,12 @@
                           <span class="category">Photography</span>
                           <h4>Golden Hour</h4>
                           <div class="portfolio-links">
-                            <a href="assets/img/portfolio/photography/moa.jpg" class="glightbox" title="MOA Lights"
-                              ><i class="bi bi-plus-lg"></i
+                            <a
+                              href="assets/img/portfolio/photography/moa.jpg"
+                              class="glightbox"
+                              title="MOA Lights"
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -845,7 +894,8 @@
                               href="assets/img/portfolio/photography/bottles.jpg"
                               class="glightbox"
                               title="Prism Collection"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -873,7 +923,8 @@
                               href="assets/img/portfolio/photography/kyukyuramen.jpg"
                               class="glightbox"
                               title="KyuKyu Ramen"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -901,7 +952,8 @@
                               href="assets/img/portfolio/design/toolittletoolate.png"
                               class="glightbox"
                               title="Too Little, Too Late"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -928,7 +980,8 @@
                               href="assets/img/portfolio/design/raisondetre(1).png"
                               class="glightbox"
                               title="Raison d'etre"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -955,7 +1008,8 @@
                               href="assets/img/portfolio/design/Osiana_Remix.png"
                               class="glightbox"
                               title="Usagi Poster: Mixed Media"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -982,7 +1036,8 @@
                               href="assets/img/portfolio/design/bandposter.png"
                               class="glightbox"
                               title="Kessoku Band Concert Poster"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1009,7 +1064,8 @@
                               href="assets/img/portfolio/design/bandposter%202.png"
                               class="glightbox"
                               title="Kessoku Band Concert Poster 2"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1036,7 +1092,8 @@
                               href="assets/img/portfolio/digital_art/Hanni.png"
                               class="glightbox"
                               title="Hanni Illustration using Ibis Paint X"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1063,7 +1120,8 @@
                               href="assets/img/portfolio/digital_art/FigureDrawing.png"
                               class="glightbox"
                               title="Figure Drawing using Ibis Paint X"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1090,7 +1148,8 @@
                               href="assets/img/portfolio/digital_art/TojisBack.png"
                               class="glightbox"
                               title="Tojis Back using Ibis Paint X"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1117,7 +1176,8 @@
                               href="assets/img/portfolio/digital_art/SharkPoster.png"
                               class="glightbox"
                               title="Shark Poster using Adobe Illustrator"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1144,7 +1204,8 @@
                               href="assets/img/portfolio/digital_art/HandDrawing.png"
                               class="glightbox"
                               title="Hands Drawing using Ibis Paint X"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1171,7 +1232,8 @@
                               href="assets/img/portfolio/digital_art/FeetDrawing.png"
                               class="glightbox"
                               title="Feet Drawing using Ibis Paint X"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1198,7 +1260,8 @@
                               href="assets/img/portfolio/digital_art/Am%20I%20an%20Angel%20(2025).png"
                               class="glightbox"
                               title="Am I an Angel? using Ibis Paint X"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1225,7 +1288,8 @@
                               href="assets/img/portfolio/digital_art/CharacterExpression.png"
                               class="glightbox"
                               title="Character Expressions using Ibis Paint X"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1252,7 +1316,8 @@
                               href="assets/img/portfolio/digital_art/Myself.png"
                               class="glightbox"
                               title="Myself using Ibis Paint X"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1279,7 +1344,8 @@
                               href="assets/img/portfolio/digital_art/ChibiErin.png"
                               class="glightbox"
                               title="Chibi Erin using Ibis Paint X"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1306,7 +1372,8 @@
                               href="assets/img/portfolio/traditional_art/catpainting.jpeg"
                               class="glightbox"
                               title="Cat Under Christmas Tree: Acrylic on Canvas"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1333,7 +1400,8 @@
                               href="assets/img/portfolio/traditional_art/chosenone.jpeg"
                               class="glightbox"
                               title="The Chosen One: Acrylic on Canvas"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1360,7 +1428,8 @@
                               href="assets/img/portfolio/traditional_art/FrierenSketch.jpg"
                               class="glightbox"
                               title="Frieren Sketch: Pencil on Paper"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1387,7 +1456,8 @@
                               href="assets/img/portfolio/traditional_art/TojiIllustration.jpg"
                               class="glightbox"
                               title="Toji Zenin Illustration: Black Pen on Paper"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1414,7 +1484,8 @@
                               href="assets/img/portfolio/traditional_art/ventissilence.jpeg"
                               class="glightbox"
                               title="Ventis Silence: Acrylic on Canvas"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1441,7 +1512,8 @@
                               href="assets/img/portfolio/traditional_art/SideProfileSelfPortrait_Charcoal.jpg"
                               class="glightbox"
                               title="Self Portrait: Side Profile: Charcoal on Sandpaper"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1468,7 +1540,8 @@
                               href="assets/img/portfolio/photography/lightpainting2025.png"
                               class="glightbox"
                               title="Light Photography"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1491,8 +1564,12 @@
                           <span class="category">Photography</span>
                           <h4>The Gaze</h4>
                           <div class="portfolio-links">
-                            <a href="assets/img/portfolio/photography/thegaze.png" class="glightbox" title="The Gaze"
-                              ><i class="bi bi-plus-lg"></i
+                            <a
+                              href="assets/img/portfolio/photography/thegaze.png"
+                              class="glightbox"
+                              title="The Gaze"
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1519,7 +1596,8 @@
                               href="assets/img/portfolio/photography/smallrebel.png"
                               class="glightbox"
                               title="Small Rebel"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <!--<a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>-->
                           </div>
@@ -1542,14 +1620,18 @@
                           <span class="category">Filmmaking</span>
                           <h4>CRUSHED (2025)</h4>
                           <div class="portfolio-links">
-                            <a href="assets/img/portfolio/film/CRUSHED.jpg" class="glightbox" title="CRUSHED (2025)"
-                              ><i class="bi bi-plus-lg"></i
+                            <a
+                              href="assets/img/portfolio/film/CRUSHED.jpg"
+                              class="glightbox"
+                              title="CRUSHED (2025)"
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <a
                               href="https://drive.google.com/file/d/1P6Krlt9TuQygmTExjmeCoJvccxN7nwHE/view?usp=sharing"
                               title="More Details"
                               target="_blank"
-                              ><i class="bi bi-arrow-right"></i
+                              aria-label="Will open a new window redirected to view the film" ><i class="bi bi-arrow-right"></i
                             ></a>
                           </div>
                         </div>
@@ -1571,14 +1653,18 @@
                           <span class="category">Filmmaking</span>
                           <h4>KITA (2025)</h4>
                           <div class="portfolio-links">
-                            <a href="assets/img/portfolio/film/KITA.jpg" class="glightbox" title="KITA (2025)"
-                              ><i class="bi bi-plus-lg"></i
+                            <a
+                              href="assets/img/portfolio/film/KITA.jpg"
+                              class="glightbox"
+                              title="KITA (2025)"
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <a
                               href="https://drive.google.com/file/d/18q20lsS3lZM0YNJknJr_bKp6COk-qhiM/view?usp=sharing"
                               title="More Details"
                               target="_blank"
-                              ><i class="bi bi-arrow-right"></i
+                              aria-label="Will open a new window redirected to open the resume" ><i class="bi bi-arrow-right"></i
                             ></a>
                           </div>
                         </div>
@@ -1604,10 +1690,11 @@
                               href="assets/img/portfolio/webngame/nyaninvasion.jpg"
                               class="glightbox"
                               title="Nyan Invasion (2021)"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <a href="https://scratch.mit.edu/projects/474645769" title="More Details" target="_blank"
-                              ><i class="bi bi-arrow-right"></i
+                              aria-label="Will open a new window redirected to the scratch game" ><i class="bi bi-arrow-right"></i
                             ></a>
                           </div>
                         </div>
@@ -1633,10 +1720,11 @@
                               href="assets/img/portfolio/webngame/fixittrashit.jpg"
                               class="glightbox"
                               title="Fix IT Trash IT (2021)"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <a href="https://scratch.mit.edu/projects/487505610/" title="More Details" target="_blank"
-                              ><i class="bi bi-arrow-right"></i
+                              aria-label="Will open a new window redirected to the scratch game" ><i class="bi bi-arrow-right"></i
                             ></a>
                           </div>
                         </div>
@@ -1662,10 +1750,11 @@
                               href="assets/img/portfolio/webngame/gigagame.jpg"
                               class="glightbox"
                               title="Giga Navigates Cure (2021)"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
                             <a href="https://scratch.mit.edu/projects/471720392/" title="More Details" target="_blank"
-                              ><i class="bi bi-arrow-right"></i
+                              aria-label="Will open a new window redirected to the scratch game" ><i class="bi bi-arrow-right"></i
                             ></a>
                           </div>
                         </div>
@@ -1691,9 +1780,14 @@
                               href="assets/img/portfolio/webngame/icare4uandme.jpg"
                               class="glightbox"
                               title="iCare4UandMe (2022)"
-                              ><i class="bi bi-plus-lg"></i
+                              aria-label="Will a dialog box to view high resolution of the image ">
+                              <i class="bi bi-plus-lg" aria-hidden="true"></i
                             ></a>
-                            <a href="https://raizeerin.github.io/icare4uandme/" title="More Details" target="_blank"
+                            <a
+                              href="https://raizeerin.github.io/icare4uandme/"
+                              title="More Details"
+                              target="_blank"
+                              aria-label="Will open a new window redirected to the github pages"
                               ><i class="bi bi-arrow-right"></i
                             ></a>
                           </div>
@@ -2077,9 +2171,7 @@
                   <div class="content">
                     <h4>Email Address</h4>
                     <p>
-                      <a href="mailto:raize.osiana@ciit.edu.ph" class="contact-item">
-                        raize.osiana@ciit.edu.ph
-                      </a>
+                      <a href="mailto:raize.osiana@ciit.edu.ph" class="contact-item"> raize.osiana@ciit.edu.ph </a>
                     </p>
                   </div>
                 </div>
