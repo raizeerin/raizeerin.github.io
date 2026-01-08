@@ -2711,3 +2711,9 @@ section,
   background-color: #ffffff !important;
   color: #000000 !important;
 }
+
+.accessibility-statement{
+  margin-top: 0.5rem; 
+  font-size: 0.9rem;
+  font-style: italic;
+}
