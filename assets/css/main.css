@@ -2712,8 +2712,41 @@ section,
   color: #000000 !important;
 }
 
-.accessibility-statement{
-  margin-top: 0.5rem; 
+.accessibility-statement {
+  margin-top: 0.5rem;
   font-size: 0.9rem;
   font-style: italic;
+}
+a.accessibility-statement {
+  text-decoration: underline;
+}
+
+
+/* Global link styling */
+a {
+  color: #fad3e4; /* main brand color */
+  text-decoration: underline; /* ensures links are recognizable without color */
+  font-weight: 500; /* optional, adds emphasis */
+  transition: color 0.2s ease, outline 0.2s ease;
+}
+
+/* Hover and focus states for interactivity and accessibility */
+a:hover,
+a:focus {
+  color: #fad3e4; /* darker shade for visibility */
+  text-decoration: underline; /* always underline */
+  outline: 2px solid #fad3e4; /* keyboard focus indicator */
+  outline-offset: 2px;
+}
+
+/* Optional: remove underline for buttons or nav items if needed, but keep focus styling */
+button a,
+.navbar a {
+  text-decoration: none;
+}
+
+button a:focus,
+.navbar a:focus {
+  outline: 2px solid #fad3e4;
+  outline-offset: 2px;
 }
