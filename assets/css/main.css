@@ -2766,3 +2766,21 @@ button a:focus,
   outline: 2px solid #fad3e4; /* keyboard focus indicator */
   outline-offset: 2px;
 }
+
+.accessibility-statement {
+  font-size: 0.7rem; 
+  max-width: 900px;        /* prevents long lines on desktop */
+  padding-top: 1rem;
+  margin: 0 auto;
+  line-height: 1.5;        /* improves readability */
+  word-wrap: break-word;  /* prevents overflow on small screens */
+}
+
+/* Mobile optimization */
+@media (max-width: 576px) {
+  .accessibility-statement {
+    font-size: 0.85rem;    /* slightly smaller for mobile */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
